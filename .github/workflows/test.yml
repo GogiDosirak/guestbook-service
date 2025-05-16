@@ -1,7 +1,9 @@
 name: AWS Connection Test
 
 on:
-  workflow_dispatch:
+  push:
+    branches:
+       - main
 
 jobs:
   test-aws-connection:
