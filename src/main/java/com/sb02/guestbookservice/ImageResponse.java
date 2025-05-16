@@ -1,4 +1,7 @@
 package com.sb02.guestbookservice;
 
-public record ImageResponse() {
+public record ImageResponse(
+    String s3Url
+) {
+
 }

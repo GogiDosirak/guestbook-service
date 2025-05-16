@@ -1,4 +1,6 @@
 package com.sb02.guestbookservice;
 
-public interface GuestbookRepository {
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface GuestbookRepository extends JpaRepository<Guestbook, Long> {
 }

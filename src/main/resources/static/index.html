@@ -238,7 +238,6 @@
             
             guestbooks.forEach(guestbook => {
                 const formattedDate = new Date(guestbook.createdAt).toLocaleString('ko-KR');
-                
                 const guestbookElement = document.createElement('div');
                 guestbookElement.className = 'guestbook-item';
                 guestbookElement.innerHTML = `
@@ -250,6 +249,7 @@
                     ${guestbook.imageUrl ? '<div>📷 이미지 첨부됨</div>' : ''}
                     <div class="guestbook-date">${formattedDate}</div>
                 `;
+
                 
                 // 클릭 이벤트 추가 - 상세 보기
                 guestbookElement.addEventListener('click', function() {

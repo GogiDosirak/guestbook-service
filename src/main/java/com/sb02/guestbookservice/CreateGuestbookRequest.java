@@ -1,4 +1,11 @@
 package com.sb02.guestbookservice;
 
-public record CreateGuestbookRequest() {
+import org.springframework.web.multipart.MultipartFile;
+
+public record CreateGuestbookRequest(
+    String name,
+    String title,
+    String content,
+    MultipartFile image
+) {
 }
